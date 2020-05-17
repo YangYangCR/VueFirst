@@ -25,7 +25,7 @@
     name: '',
     methods: {
       showBusiness () {
-        net.get('/phone/business/show?id=1434', {
+        net.get('/business/show?id=1434', {
           parameters: {
             id: 1434
           }
@@ -37,7 +37,7 @@
       },
 
       getBusinessByName () {
-        net.get('/phone/business/getBusinessByName', {
+        net.get('/business/getBusinessByName', {
           params: {
             name: this.businessName
           }

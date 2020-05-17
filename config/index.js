@@ -12,11 +12,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/phone': {
-        target: 'http://127.0.0.1:9999',
+      '/business': {
+        target: `${proxy_host}`,
         changeOrigin: true,
         pathRewrite: {
-          '/phone': '/phone'
+          '^/business': '/phone/business'
         }
       }
     },
